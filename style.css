@@ -7,3 +7,112 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.site3dConfiguratorPanel_width_wide {
+  width: 498px !important;
+}
+
+.site3dConfiguratorPanelCaption {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+}
+
+.site3dWidget
+  #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_hide {
+  margin-right: -500px !important;
+}
+
+.site3dConfiguratorSettingsGroupsButton {
+  justify-content: flex-start !important;
+  padding: 16px 20px !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  leading-trim: Cap height;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+}
+
+.site3dWidget
+  #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_show {
+  padding: 20px;
+}
+
+.site3dConfiguratorSettingsTile__item {
+  height: 150px !important;
+  width: calc(100% / 2 - 4px) !important;
+  border-width: 15px !important;
+  border-color: #9db1cd !important;
+}
+
+.site3dConfiguratorSettingsTile__item[data-selected="selected"] {
+  border-color: #587aaa !important;
+}
+
+.site3dConfiguratorSettingsItemLabel {
+  margin-top: 15px;
+  font-family: "Inter", sans-serif !important;
+
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+  color: var(--site3d-panel-colorPrimary) !important;
+}
+
+.site3dConfiguratorSettingsItemPrice {
+  display: none !important;
+}
+
+.site3dConfiguratorSettingsItem {
+  padding: 20px !important;
+}
+
+.site3dConfiguratorSettingsSelect .vscomp-value {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  max-width: 100% !important;
+
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+}
+
+.site3dConfiguratorSettingsSelect .vscomp-toggle-button {
+  padding: 16px 20px 16px 10px !important;
+}
+
+.site3dConfiguratorSettingsSelect {
+  height: 100% !important;
+}
+
+.site3dConfiguratorPrice {
+  padding: 20px 40px !important;
+}
+
+.site3dConfiguratorPrice__content {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 32px !important;
+  leading-trim: Cap height;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+}
+
+.site3dConfiguratorPanelControlsButton {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.site3dConfiguratorPanelColor {
+  width: 271px !important;
+}

@@ -45,14 +45,22 @@ body {
 }
 
 .site3dConfiguratorSettingsTile__item {
-  height: 150px !important;
+  height: 200px !important;
   width: calc(100% / 2 - 4px) !important;
-  border-width: 15px !important;
   border-color: #9db1cd !important;
+  padding: 16px 20px !important;
+  gap: 10px !important;
 }
 
 .site3dConfiguratorSettingsTile__item[data-selected="selected"] {
   border-color: #587aaa !important;
+}
+
+.site3dConfiguratorPanel_width_wide
+  .site3dConfiguratorSettingsTile__item_model
+  .site3dConfiguratorSettingsTile__itemImage {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .site3dConfiguratorSettingsItemLabel {
@@ -72,9 +80,13 @@ body {
 }
 
 .site3dConfiguratorSettingsItem {
-  padding: 20px !important;
+  padding: 5px 0px !important;
+  box-shadow: none !important;
 }
 
+.site3dConfiguratorSettingsItemLabel {
+  display: none !important;
+}
 .site3dConfiguratorSettingsSelect .vscomp-value {
   font-family: "Inter", sans-serif !important;
   font-weight: 600 !important;
@@ -115,4 +127,101 @@ body {
 
 .site3dConfiguratorPanelColor {
   width: 271px !important;
+}
+
+.site3dConfiguratorSettingsTile__itemCaption {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  leading-trim: Cap height;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+  overflow: visible !important;
+}
+
+.site3dConfiguratorSettingsWithoutGroupContent
+  .site3dConfiguratorSettingsItemContent {
+  flex-direction: row !important;
+  align-items: center !important;
+  background: #2e60a6b2 !important;
+  justify-content: space-between !important;
+  padding: 0px 20px !important;
+  border-radius: 15px;
+  height: 54px !important;
+}
+
+.site3dConfiguratorSettingsMaterial__textureRect {
+  display: none !important;
+}
+
+.site3dConfiguratorSettingsContent {
+  gap: 0px !important;
+}
+
+.site3dConfiguratorSettingsWithoutGroupContent
+  .site3dConfiguratorSettingsItemCaption {
+  display: none !important;
+}
+
+.site3dConfiguratorSettingsItemCaptionContent {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  leading-trim: Cap height;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+  color: white !important;
+}
+
+.site3dConfiguratorSettingsMaterial__textureButton_upload {
+  background-image: url(./Download.svg) !important;
+}
+
+.site3dConfiguratorSettingsMaterial__textureButton::before {
+  content: "Загрузить файл для брендирования";
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  leading-trim: Cap height;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+  color: white !important;
+  display: block;
+  width: 400px !important;
+  position: relative;
+  top: 2px;
+}
+
+.site3dConfiguratorSettingsMaterial__textureRemove {
+  display: none !important;
+}
+
+.site3dConfiguratorPanelPrice {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  leading-trim: Cap height;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site3dConfiguratorPanelPrice::before {
+  content: "Цена за 1 шт.";
+  font-family: "Inter", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  leading-trim: Cap height;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+}
+
+.site3dConfiguratorContent {
+  box-shadow: none !important;
 }

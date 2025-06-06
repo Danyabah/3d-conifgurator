@@ -13,12 +13,14 @@ body {
 }
 
 .site3dConfiguratorPanelCaption {
-  font-family: "Inter", sans-serif !important;
-  font-weight: 500 !important;
-  font-size: 32px !important;
-  line-height: 110.00000000000001% !important;
-  letter-spacing: -0.04em !important;
-  vertical-align: bottom;
+  font-family: "Inter" !important;
+  font-weight: 600 !important;
+  font-size: 28px !important;
+  leading-trim: Cap height !important;
+  line-height: 100% !important;
+  letter-spacing: -2% !important;
+  vertical-align: bottom !important;
+  padding: 0px !important;
 }
 
 .site3dWidget
@@ -28,34 +30,72 @@ body {
 
 .site3dConfiguratorSettingsGroupsButton {
   justify-content: flex-start !important;
-  padding: 16px 20px !important;
+  padding: 20px 16px 17px 16px !important;
 
   font-family: "Inter", sans-serif !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   font-size: 20px !important;
-  leading-trim: Cap height;
   line-height: 110.00000000000001% !important;
-  letter-spacing: -0.04em !important;
-  vertical-align: bottom;
+  letter-spacing: -1% !important;
+  vertical-align: bottom !important;
+  transition: all 0.3s ease 0s;
+
+  border: 1px solid var(--System-light-stroke, #ecedf1);
+  position: relative !important;
+}
+
+.site3dConfiguratorSettingsGroupsButton:active {
+  background: #0c102f !important;
+  border: 1px solid #393f7d !important;
+  color: #ffffff !important ;
+}
+
+.site3dConfiguratorSettingsGroupsButton::before {
+  content: "";
+  background-image: url(./arrow.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 18px;
+  top: 21px;
+  transition: all 0.3s ease 0s;
 }
 
 .site3dWidget
   #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_show {
-  padding: 20px;
+  padding: 20px !important;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
 }
 
 .site3dConfiguratorSettingsTile__item {
   height: 200px !important;
   width: calc(100% / 2 - 4px) !important;
   border-color: #9db1cd !important;
-  padding: 16px 20px !important;
+  padding: 10px !important;
   gap: 10px !important;
+  border: 1.6px solid var(--System-light-stroke, #ecedf1) !important;
+  transition: all 0.3s ease 0s;
+}
+
+.site3dConfiguratorSettingsTile__item:hover {
+  background: var(--System-White-Hover, #e3e8f4) !important;
+  border: 1.6px solid var(--Secondary-3, #cfd8ec) !important;
 }
 
 .site3dConfiguratorSettingsTile__item[data-selected="selected"] {
-  border-color: #587aaa !important;
+  background: var(--Secondary-2, #393f7d) !important;
+  border: 1.6px solid var(--Primary-, #161c4e) !important;
 }
 
+.site3dConfiguratorSettingsTile__item[data-selected="selected"]
+  .site3dConfiguratorSettingsTile__itemCaption {
+  color: #ffffff !important;
+}
+
+.site3dConfiguratorSettingsTile__items {
+  justify-content: flex-start !important;
+}
 .site3dConfiguratorPanel_width_wide
   .site3dConfiguratorSettingsTile__item_model
   .site3dConfiguratorSettingsTile__itemImage {
@@ -73,6 +113,20 @@ body {
   letter-spacing: -0.04em !important;
   vertical-align: bottom;
   color: var(--site3d-panel-colorPrimary) !important;
+}
+
+.site3dConfiguratorSettingsGroupsButtonSelected:hover {
+  background-color: var(--site3d-button-bgColorActivePrimary) !important;
+  color: var(--site3d-button-colorActivePrimary) !important;
+}
+
+.site3dConfiguratorSettingsGroupsButtonSelected {
+  border: 1px solid #393f7d !important;
+  background: #161c4e !important;
+}
+
+.site3dConfiguratorSettingsGroupsButtonSelected::before {
+  transform: rotate(180deg);
 }
 
 .site3dConfiguratorSettingsItemPrice {
@@ -98,8 +152,19 @@ body {
   vertical-align: bottom;
 }
 
+.site3dConfiguratorSettingsSelect {
+  border: 2px solid var(--System-light-stroke, #ecedf1) !important;
+  transition: all 0.3s ease 0s;
+}
+
 .site3dConfiguratorSettingsSelect .vscomp-toggle-button {
-  padding: 16px 20px 16px 10px !important;
+  padding: 20px 20px 17px 16px !important;
+  background: var(--text-White, #ffffff);
+  box-shadow: none !important;
+}
+
+.site3dConfiguratorSettingsSelect.pop-comp-active {
+  border: 2px solid var(--Secondary-, #8990d9) !important;
 }
 
 .site3dConfiguratorSettingsSelect {
@@ -131,7 +196,7 @@ body {
 
 .site3dConfiguratorSettingsTile__itemCaption {
   font-family: "Inter", sans-serif !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   font-size: 20px !important;
   leading-trim: Cap height;
   line-height: 110.00000000000001% !important;
@@ -140,14 +205,22 @@ body {
   overflow: visible !important;
 }
 
+.site3dConfiguratorPanel {
+  gap: 0px !important;
+}
+
+.site3dConfiguratorPanelTop {
+  margin-bottom: 24px !important;
+}
+
 .site3dConfiguratorSettingsWithoutGroupContent
   .site3dConfiguratorSettingsItemContent {
   flex-direction: row !important;
   align-items: center !important;
-  background: #2e60a6b2 !important;
+  background: #161c4e !important;
   justify-content: space-between !important;
   padding: 0px 20px !important;
-  border-radius: 15px;
+  border-radius: 8px;
   height: 54px !important;
 }
 
@@ -180,9 +253,9 @@ body {
 }
 
 .site3dConfiguratorSettingsMaterial__textureButton::before {
-  content: "Загрузить файл для брендирования";
+  content: "Примерить свой дизайн";
   font-family: "Inter", sans-serif !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   font-size: 20px !important;
   leading-trim: Cap height;
   line-height: 110.00000000000001% !important;
@@ -224,4 +297,21 @@ body {
 
 .site3dConfiguratorContent {
   box-shadow: none !important;
+}
+
+.site3dConfiguratorPanelCloseButton {
+  background: none !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0px !important;
+}
+
+#site3d-configurator-0 .site3dConfiguratorPanelCloseButton_content {
+  mask-image: url(./close.svg) !important;
+  background-color: #9d9fb3 !important;
+  transition: all 0.3s ease 0s;
+}
+
+#site3d-configurator-0 .site3dConfiguratorPanelCloseButton_content:hover {
+  background-color: #161c4e !important;
 }

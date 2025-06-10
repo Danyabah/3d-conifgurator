@@ -42,5 +42,5 @@
 //   });
 // }
 
-// // Запускаем
+// // Запускаемp
 // insertAndWatchCustomPrice();

@@ -44,6 +44,9 @@ body {
   position: relative !important;
 }
 
+.site3dConfiguratorSettingsGroup {
+  gap: 0px !important;
+}
 .site3dConfiguratorSettingsGroupsButton:active {
   background: #0c102f !important;
   border: 1px solid #393f7d !important;
@@ -169,6 +172,8 @@ body {
 
 .site3dConfiguratorSettingsSelect {
   height: 100% !important;
+  border-radius: none !important;
+  overflow: hidden !important;
 }
 
 .site3dConfiguratorPrice {
@@ -252,6 +257,10 @@ body {
   background-image: url(./Download.svg) !important;
 }
 
+.site3dConfiguratorSettingsMaterial__items {
+  display: none !important;
+}
+
 .site3dConfiguratorSettingsMaterial__textureButton::before {
   content: "Примерить свой дизайн";
   font-family: "Inter", sans-serif !important;
@@ -314,4 +323,42 @@ body {
 
 #site3d-configurator-0 .site3dConfiguratorPanelCloseButton_content:hover {
   background-color: #161c4e !important;
+}
+
+.vscomp-dropbox-container {
+  display: inline-flex !important;
+  opacity: 1 !important;
+  max-width: 100% !important;
+  transform: none !important;
+}
+
+.vscomp-toggle-button {
+  display: none !important;
+}
+
+.pop-comp-wrapper {
+  position: relative !important;
+  box-shadow: none !important;
+}
+
+.site3dConfiguratorSettingsSelect__labelCaption {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -1% !important ;
+  vertical-align: bottom !important;
+  color: #161c4e !important;
+}
+
+.vscomp-option {
+  transition: all 0.3s ease 0s;
+}
+
+.vscomp-option.selected {
+  background: var(--Secondary-2, #393f7d) !important;
+}
+
+.vscomp-option.selected .site3dConfiguratorSettingsSelect__labelCaption {
+  color: #ffffff !important;
 }

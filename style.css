@@ -365,7 +365,7 @@ body {
 
 .site3dWidget__navButton_share {
   position: absolute;
-  left: 60px;
+  left: 50px;
   top: 4px;
 }
 
@@ -395,11 +395,11 @@ body {
   vertical-align: bottom;
   border-radius: 8px;
   background: var(--Primary-, #161c4e);
-  transition: all 0.3s ease 0s;
+  /* transition: all 0.3s ease 0s; */
 }
 
 .site3dWidget__navButtonContent {
-  transition: all 0.3s ease 0s;
+  /* transition: all 0.3s ease 0s; */
 }
 
 .site3dWidget__navButton_share:hover .site3dWidget__navButtonContent {

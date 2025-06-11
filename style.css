@@ -291,6 +291,7 @@ body {
   vertical-align: bottom;
   display: flex;
   justify-content: space-between;
+  padding-top: 10px !important;
 }
 
 .site3dConfiguratorPanelPrice::before {
@@ -408,4 +409,8 @@ body {
 
 .site3dWidget__navButton_share:hover .site3dWidget__navButtonContent::before {
   background-color: var(--Blue-Hover, #30387f);
+}
+
+.site3dConfiguratorPanelContent {
+  scrollbar-gutter: stable;
 }

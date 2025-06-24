@@ -409,3 +409,49 @@ body {
 .site3dWidget__navButton_share:hover .site3dWidget__navButtonContent::before {
   background-color: var(--Blue-Hover, #30387f);
 }
+
+.site3dConfiguratorLoadScreen {
+  display: none !important;
+}
+
+.site3dWidget__preload {
+  display: none !important;
+}
+
+.site3dWidget__preload_show {
+  display: none !important;
+}
+
+.site3dWidget__load_show {
+  display: none !important;
+}
+
+.site3dConfiguratorLoadScreen_init {
+}
+
+.site3dConfiguratorLoadScreen_main {
+}
+
+.site3dConfiguratorLoadScreen_show {
+}
+
+.site3dConfiguratorLoadScreen__content {
+}
+
+.site3dConfiguratorLoadScreen__image {
+}
+
+.site3dConfiguratorLoadScreen__imageContent {
+}
+
+.site3dConfiguratorLoadScreen__status {
+}
+
+.site3dConfiguratorLoadScreen__status_show {
+}
+
+.site3dConfiguratorLoadScreen__statusContent {
+}
+
+.site3dConfiguratorLoadScreen__statusContent p {
+}

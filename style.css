@@ -364,41 +364,6 @@ body {
   color: #ffffff !important;
 }
 
-.site3dWidget__navButton_share {
-  position: absolute;
-  left: 50px;
-  top: 4px;
-}
-
-.site3dWidget__navButton_share .site3dWidget__navButtonContent {
-  position: relative;
-  mask-image: none !important;
-  width: 200px !important;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  height: 40px !important;
-}
-.site3dWidget__navButton_share .site3dWidget__navButtonContent::before {
-  content: "Оформить заказ";
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 110.00000000000001%;
-  letter-spacing: -1%;
-  text-align: center;
-  vertical-align: bottom;
-  border-radius: 8px;
-  background: var(--Primary-, #161c4e);
-  /* transition: all 0.3s ease 0s; */
-}
-
 .site3dWidget__navButtonContent {
   /* transition: all 0.3s ease 0s; */
 }
@@ -459,4 +424,122 @@ body {
 }
 
 .site3dConfiguratorLoadScreen__statusContent p {
+}
+
+.site3dConfiguratorOrderButton {
+  border-radius: 8px !important;
+  padding: 16px 24px !important;
+  background: var(--Primary-, #161c4e) !important;
+  color: var(--text-White, #ffffff) !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -1% !important;
+  height: 40px !important;
+  transition: all 0.3s ease 0s;
+}
+
+.site3dConfiguratorOrderButton:hover {
+  background: var(--Blue-Hover, #30387f) !important;
+}
+
+.site3dWindow__container {
+  width: 647px !important;
+  max-width: 100% !important;
+  border-radius: round-L;
+  padding: 50px !important;
+  background: var(--Secondary-BG, #f7f7f7) !important;
+}
+
+.site3dWindow__caption {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 70px !important;
+  line-height: 85% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+  padding: 0px !important;
+  text-align: left !important;
+  margin-bottom: 40px !important;
+}
+
+.site3dWindow__content {
+  padding: 0px !important;
+}
+
+.site3dConfiguratorOrderWindow__field {
+  padding: 0px !important;
+  margin-bottom: 6px;
+}
+.site3dConfiguratorOrderWindow__fieldValue {
+  padding: 16px !important;
+  border: 1.4px solid #d7d8e2 !important;
+  background: var(--System-light-stroke, #ecedf1) !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -1% !important;
+  vertical-align: bottom;
+  border-radius: round-S !important;
+  color: var(--Primary-, #161c4e) !important;
+}
+
+.site3dConfiguratorOrderWindow__fieldValue::placeholder {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -1% !important;
+  color: var(--Primary-, #161c4e) !important;
+}
+
+.site3dWindow__buttons {
+  padding: 16px 0px 0px 0px !important;
+}
+.site3dWindow__buttons_show {
+  justify-content: initial !important;
+}
+
+.site3dWindow__button {
+  border-radius: 8px !important;
+  padding: 16px 24px !important;
+  background: var(--Primary-, #161c4e) !important;
+  color: var(--text-White, #ffffff) !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -1% !important;
+  transition: all 0.3s ease 0s;
+  width: 100% !important;
+}
+
+.site3dWindow__button:hover {
+  background: var(--Blue-Hover, #30387f) !important;
+}
+.site3dWindow__closeContent {
+  mask-image: url(./close.svg) !important;
+  background-color: #9d9fb3 !important;
+  transition: all 0.3s ease 0s;
+}
+
+.site3dWindow__closeContent:hover {
+  background-color: #161c4e !important;
+}
+
+.site3dWindow__close {
+  top: 30px !important;
+  right: 30px !important;
+}
+
+.site3dWindow__close:hover {
+  background-color: #f7f7f7 !important;
+}
+
+.site3dConfiguratorOrderWindow__fieldValue:focus-visible {
+  outline: none !important;
 }

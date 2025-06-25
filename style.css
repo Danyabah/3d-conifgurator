@@ -49,7 +49,6 @@ body {
   width: 100%;
   padding: 80px 100px;
   height: 100vh;
-
   background: var(--System-Blue-Pressed, #0c102f);
 }
 
@@ -622,3 +621,22 @@ body {
 .site3dConfiguratorSettingsColor__input:focus-visible {
   outline: none !important;
 }
+
+/* experiment */
+.site3dConfiguratorContent {
+  position: static !important;
+}
+
+.site3dWidget__canvas {
+  flex-direction: row-reverse !important;
+}
+
+.site3dConfiguratorHeader {
+  left: 0 !important;
+}
+
+.site3dWidget__canvasContent {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+/* experiment */

@@ -1,19 +1,62 @@
+@font-face {
+  font-family: "LTSuperior";
+  src: url("/fonts/LTSuperior-Regular.woff2") format("woff2"),
+    url("/fonts/LTSuperior-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LTSuperior";
+  src: url("/fonts/LTSuperior-Medium.woff2") format("woff2"),
+    url("/fonts/LTSuperior-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LTSuperior";
+  src: url("/fonts/LTSuperior-Semibold.woff2") format("woff2"),
+    url("/fonts/LTSuperior-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LTSuperior";
+  src: url("/fonts/LTSuperior-Bold.woff2") format("woff2"),
+    url("/fonts/LTSuperior-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.container {
+  width: 100%;
+  padding: 80px 100px;
+  height: 100vh;
+
+  background: var(--System-Blue-Pressed, #0c102f);
+}
 .site3dConfiguratorPanel_width_wide {
   width: 498px !important;
 }
 
 .site3dConfiguratorPanelCaption {
-  font-family: "Inter" !important;
+  font-family: "LTSuperior" !important;
   font-weight: 600 !important;
   font-size: 28px !important;
   leading-trim: Cap height !important;
@@ -32,7 +75,7 @@ body {
   justify-content: flex-start !important;
   padding: 20px 16px 17px 16px !important;
 
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -108,7 +151,7 @@ body {
 
 .site3dConfiguratorSettingsItemLabel {
   margin-top: 15px;
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
 
   font-weight: 600 !important;
   font-size: 20px !important;
@@ -145,7 +188,7 @@ body {
   display: none !important;
 }
 .site3dConfiguratorSettingsSelect .vscomp-value {
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 600 !important;
   font-size: 20px !important;
   max-width: 100% !important;
@@ -181,7 +224,7 @@ body {
 }
 
 .site3dConfiguratorPrice__content {
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 500 !important;
   font-size: 32px !important;
   leading-trim: Cap height;
@@ -200,7 +243,7 @@ body {
 }
 
 .site3dConfiguratorSettingsTile__itemCaption {
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   leading-trim: Cap height;
@@ -243,7 +286,7 @@ body {
 }
 
 .site3dConfiguratorSettingsItemCaptionContent {
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 600 !important;
   font-size: 20px !important;
   leading-trim: Cap height;
@@ -263,7 +306,7 @@ body {
 
 .site3dConfiguratorSettingsMaterial__textureButton::before {
   content: "Примерить свой дизайн";
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   leading-trim: Cap height;
@@ -282,7 +325,7 @@ body {
 }
 
 .site3dConfiguratorPanelPrice {
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 700 !important;
   font-size: 32px !important;
   leading-trim: Cap height;
@@ -296,7 +339,7 @@ body {
 
 .site3dConfiguratorPanelPrice::before {
   content: "Цена за 1 шт.";
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 700 !important;
   font-size: 32px !important;
   leading-trim: Cap height;
@@ -343,7 +386,7 @@ body {
 }
 
 .site3dConfiguratorSettingsSelect__labelCaption {
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -432,7 +475,7 @@ body {
   background: var(--Primary-, #161c4e) !important;
   color: var(--text-White, #ffffff) !important;
 
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -448,13 +491,13 @@ body {
 .site3dWindow__container {
   width: 647px !important;
   max-width: 100% !important;
-  border-radius: round-L;
+  border-radius: 40px;
   padding: 50px !important;
   background: var(--Secondary-BG, #f7f7f7) !important;
 }
 
 .site3dWindow__caption {
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 600 !important;
   font-size: 70px !important;
   line-height: 85% !important;
@@ -477,18 +520,32 @@ body {
   padding: 16px !important;
   border: 1.4px solid #d7d8e2 !important;
   background: var(--System-light-stroke, #ecedf1) !important;
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
   letter-spacing: -1% !important;
   vertical-align: bottom;
-  border-radius: round-S !important;
+  border-radius: 8px !important;
+  color: var(--Primary-, #161c4e) !important;
+}
+
+.site3dConfiguratorSettingsColor__input {
+  padding: 16px !important;
+  border: 1.4px solid #d7d8e2 !important;
+  background: var(--System-light-stroke, #ecedf1) !important;
+  font-family: "LTSuperior", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -1% !important;
+  vertical-align: bottom;
+  border-radius: 8px !important;
   color: var(--Primary-, #161c4e) !important;
 }
 
 .site3dConfiguratorOrderWindow__fieldValue::placeholder {
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -509,7 +566,7 @@ body {
   background: var(--Primary-, #161c4e) !important;
   color: var(--text-White, #ffffff) !important;
 
-  font-family: "Inter", sans-serif !important;
+  font-family: "LTSuperior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -541,5 +598,8 @@ body {
 }
 
 .site3dConfiguratorOrderWindow__fieldValue:focus-visible {
+  outline: none !important;
+}
+.site3dConfiguratorSettingsColor__input:focus-visible {
   outline: none !important;
 }

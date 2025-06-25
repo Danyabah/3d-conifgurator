@@ -42,6 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "LTSuperior", sans-serif;
 }
 
 .container {
@@ -51,6 +52,21 @@ body {
 
   background: var(--System-Blue-Pressed, #0c102f);
 }
+
+.container__title {
+  font-family: "LTSuperior", sans-serif;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 85%;
+  letter-spacing: -4%;
+  text-align: center;
+  vertical-align: bottom;
+  color: #ffffff;
+}
+
 .site3dConfiguratorPanel_width_wide {
   width: 498px !important;
 }
@@ -350,6 +366,9 @@ body {
 
 .site3dConfiguratorContent {
   box-shadow: none !important;
+  /* ex */
+}
+.site3dWidget__canvas {
 }
 
 .site3dConfiguratorPanelCloseButton {

@@ -635,7 +635,7 @@ body {
   left: 0 !important;
 }
 
-.site3dWidget__canvasContent {
+body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }

@@ -827,3 +827,28 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
     right: 10px !important;
   }
 }
+
+.vscomp-wrapper.show-as-popup .vscomp-dropbox {
+  margin-top: 0px !important;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  position: static !important;
+  width: 100% !important;
+}
+
+.vscomp-wrapper.show-as-popup .vscomp-dropbox-container {
+  position: static !important;
+  height: 100% !important;
+
+  background-color: none !important;
+  display: block !important;
+  height: 100% !important;
+  justify-content: center;
+  left: 0;
+  opacity: 1;
+  overflow: auto;
+  padding: 0px !important;
+  position: static !important;
+  top: 0;
+  width: 100% !important;
+}

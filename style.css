@@ -640,3 +640,190 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
   border-bottom-right-radius: 0px !important;
 }
 /* experiment */
+
+@media (max-width: 1150px) {
+  .site3dConfiguratorPanel_width_wide {
+    width: 350px !important;
+  }
+  .site3dConfiguratorPanelCaption {
+    font-size: 22px !important;
+  }
+  .site3dWidget
+    #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_show {
+    padding: 15px !important;
+  }
+
+  .site3dConfiguratorSettingsGroupsButton {
+    padding: 15px 11px 12px 11px !important;
+    font-size: 18px !important;
+  }
+
+  .site3dConfiguratorSettingsGroupsButton::before {
+    top: 16px !important;
+  }
+
+  .site3dConfiguratorSettingsTile__itemCaption {
+    font-size: 18px !important;
+  }
+
+  .site3dConfiguratorSettingsTile__item {
+    height: 160px !important;
+  }
+
+  .site3dConfiguratorSettingsSelect__labelCaption {
+    font-size: 18px !important;
+  }
+
+  .site3dConfiguratorSettingsColor__input {
+    padding: 10px !important;
+  }
+
+  .vscomp-option {
+    padding: 0px 6px !important;
+  }
+
+  .site3dConfiguratorSettingsMaterial__textureButton::before {
+    width: 272px !important;
+    font-size: 18px !important;
+    top: 4px !important;
+  }
+
+  .site3dConfiguratorSettingsWithoutGroupContent
+    .site3dConfiguratorSettingsItemContent {
+    height: 48px !important;
+  }
+
+  .site3dConfiguratorPanelPrice::before {
+    font-size: 26px !important;
+  }
+
+  .site3dConfiguratorPanelPrice {
+    font-size: 26px !important;
+  }
+
+  .site3dWindow__container {
+    width: 450px !important;
+    padding: 20px !important;
+  }
+
+  .site3dWindow__caption {
+    font-size: 49px !important;
+  }
+
+  .site3dWindow__close {
+    top: 20px !important;
+    right: 20px !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 40px 50px;
+  }
+
+  .container__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .site3dConfiguratorContent {
+    position: absolute !important;
+  }
+
+  .site3dWidget__canvas {
+    flex-direction: row !important;
+  }
+
+  .site3dConfiguratorHeader {
+    left: initial !important;
+  }
+
+  body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 20px;
+  }
+
+  .site3dConfiguratorPanel_width_wide {
+    width: 300px !important;
+  }
+
+  .site3dConfiguratorPanelCaption {
+    font-size: 20px !important;
+  }
+
+  .site3dWidget
+    #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_show {
+    padding: 10px !important;
+  }
+
+  .site3dConfiguratorSettingsGroupsButton {
+    padding: 10px 6px 7px 6px !important;
+    font-size: 15px !important;
+  }
+
+  .site3dConfiguratorSettingsGroupsButton::before {
+    top: 7px !important;
+  }
+
+  .site3dConfiguratorSettingsTile__itemCaption {
+    font-size: 15px !important;
+  }
+
+  .site3dConfiguratorSettingsTile__item {
+    height: 140px !important;
+  }
+
+  .site3dConfiguratorSettingsSelect__labelCaption {
+    font-size: 15px !important;
+  }
+
+  .site3dConfiguratorSettingsColor__input {
+    padding: 5px 10px !important;
+    font-size: 15px !important;
+  }
+
+  .site3dConfiguratorSettingsMaterial__textureButton::before {
+    width: 220px !important;
+    font-size: 15px !important;
+    top: 3px !important;
+  }
+
+  .site3dConfiguratorSettingsMaterial__textureButton {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .site3dConfiguratorSettingsWithoutGroupContent
+    .site3dConfiguratorSettingsItemContent {
+    height: 36px !important;
+  }
+
+  .site3dConfiguratorPanelPrice::before {
+    font-size: 21px !important;
+  }
+
+  .site3dConfiguratorPanelPrice {
+    font-size: 21px !important;
+  }
+
+  .site3dWindow__container {
+    width: 320px !important;
+    padding: 20px !important;
+  }
+
+  .site3dWindow__caption {
+    font-size: 29px !important;
+  }
+
+  .site3dWindow__close {
+    top: 10px !important;
+    right: 10px !important;
+  }
+}

@@ -852,3 +852,6 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
   top: 0;
   width: 100% !important;
 }
+.site3dConfiguratorSettingsSelect__labelPrice {
+  display: none !important;
+}

@@ -347,13 +347,29 @@ body {
   line-height: 110.00000000000001% !important;
   letter-spacing: -0.04em !important;
   vertical-align: bottom;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2.5fr 0.5fr 1fr;
   padding-top: 10px !important;
+  grid-template-areas: "column1 column2 column3";
+  white-space: nowrap;
 }
 
 .site3dConfiguratorPanelPrice::before {
   content: "Цена за 1 шт.";
+  font-family: "LTSuperior", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+  leading-trim: Cap height;
+  line-height: 110.00000000000001% !important;
+  letter-spacing: -0.04em !important;
+  vertical-align: bottom;
+}
+
+.site3dConfiguratorPanelPrice::after {
+  content: "от";
+  grid-area: column2;
+  justify-self: flex-end;
+  margin-right: 10px;
   font-family: "LTSuperior", sans-serif !important;
   font-weight: 700 !important;
   font-size: 32px !important;
@@ -696,6 +712,9 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
   .site3dConfiguratorPanelPrice::before {
     font-size: 26px !important;
   }
+  .site3dConfiguratorPanelPrice::after {
+    font-size: 26px !important;
+  }
 
   .site3dConfiguratorPanelPrice {
     font-size: 26px !important;
@@ -773,7 +792,8 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
   }
 
   .site3dConfiguratorSettingsTile__itemCaption {
-    font-size: 15px !important;
+    font-size: 14px !important;
+    padding: 0px !important;
   }
 
   .site3dConfiguratorSettingsTile__item {
@@ -807,6 +827,11 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
 
   .site3dConfiguratorPanelPrice::before {
     font-size: 21px !important;
+  }
+
+  .site3dConfiguratorPanelPrice::after {
+    font-size: 21px !important;
+    margin-right: 5px;
   }
 
   .site3dConfiguratorPanelPrice {

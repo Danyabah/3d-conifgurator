@@ -1,31 +1,31 @@
 @font-face {
-  font-family: "LTSuperior";
-  src: url("/fonts/LTSuperior-Regular.woff2") format("woff2"),
-    url("/fonts/LTSuperior-Regular.woff") format("woff");
+  font-family: "LT_Superior";
+  src: url("/fonts/LT_Superior-Regular.woff2") format("woff2"),
+    url("/fonts/LT_Superior-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "LTSuperior";
-  src: url("/fonts/LTSuperior-Medium.woff2") format("woff2"),
-    url("/fonts/LTSuperior-Medium.woff") format("woff");
+  font-family: "LT_Superior";
+  src: url("/fonts/LT_Superior-Medium.woff2") format("woff2"),
+    url("/fonts/LT_Superior-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "LTSuperior";
-  src: url("/fonts/LTSuperior-Semibold.woff2") format("woff2"),
-    url("/fonts/LTSuperior-Semibold.woff") format("woff");
+  font-family: "LT_Superior";
+  src: url("/fonts/LT_Superior-Semibold.woff2") format("woff2"),
+    url("/fonts/LT_Superior-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "LTSuperior";
-  src: url("/fonts/LTSuperior-Bold.woff2") format("woff2"),
-    url("/fonts/LTSuperior-Bold.woff") format("woff");
+  font-family: "LT_Superior";
+  src: url("/fonts/LT_Superior-Bold.woff2") format("woff2"),
+    url("/fonts/LT_Superior-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -42,7 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "LTSuperior", sans-serif;
+  font-family: "LT_Superior", sans-serif;
 }
 
 .container {
@@ -53,7 +53,7 @@ body {
 }
 
 .container__title {
-  font-family: "LTSuperior", sans-serif;
+  font-family: "LT_Superior", sans-serif;
   text-align: center;
   margin: 0px;
   margin-bottom: 40px;
@@ -71,7 +71,7 @@ body {
 }
 
 .site3dConfiguratorPanelCaption {
-  font-family: "LTSuperior" !important;
+  font-family: "LT_Superior" !important;
   font-weight: 600 !important;
   font-size: 28px !important;
   leading-trim: Cap height !important;
@@ -90,7 +90,7 @@ body {
   justify-content: flex-start !important;
   padding: 20px 16px 17px 16px !important;
 
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -166,7 +166,7 @@ body {
 
 .site3dConfiguratorSettingsItemLabel {
   margin-top: 15px;
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
 
   font-weight: 600 !important;
   font-size: 20px !important;
@@ -203,7 +203,7 @@ body {
   display: none !important;
 }
 .site3dConfiguratorSettingsSelect .vscomp-value {
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 600 !important;
   font-size: 20px !important;
   max-width: 100% !important;
@@ -239,7 +239,7 @@ body {
 }
 
 .site3dConfiguratorPrice__content {
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 500 !important;
   font-size: 32px !important;
   leading-trim: Cap height;
@@ -258,7 +258,7 @@ body {
 }
 
 .site3dConfiguratorSettingsTile__itemCaption {
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   leading-trim: Cap height;
@@ -301,7 +301,7 @@ body {
 }
 
 .site3dConfiguratorSettingsItemCaptionContent {
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 600 !important;
   font-size: 20px !important;
   leading-trim: Cap height;
@@ -321,7 +321,7 @@ body {
 
 .site3dConfiguratorSettingsMaterial__textureButton::before {
   content: "Примерить свой дизайн";
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   leading-trim: Cap height;
@@ -340,7 +340,7 @@ body {
 }
 
 .site3dConfiguratorPanelPrice {
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 700 !important;
   font-size: 32px !important;
   leading-trim: Cap height;
@@ -356,7 +356,7 @@ body {
 
 .site3dConfiguratorPanelPrice::before {
   content: "Цена за 1 шт.";
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 700 !important;
   font-size: 32px !important;
   leading-trim: Cap height;
@@ -370,7 +370,7 @@ body {
   grid-area: column2;
   justify-self: flex-end;
   margin-right: 10px;
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 700 !important;
   font-size: 32px !important;
   leading-trim: Cap height;
@@ -420,7 +420,7 @@ body {
 }
 
 .site3dConfiguratorSettingsSelect__labelCaption {
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -509,7 +509,7 @@ body {
   background: var(--Primary-, #161c4e) !important;
   color: var(--text-White, #ffffff) !important;
 
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -531,7 +531,7 @@ body {
 }
 
 .site3dWindow__caption {
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 600 !important;
   font-size: 70px !important;
   line-height: 85% !important;
@@ -554,7 +554,7 @@ body {
   padding: 16px !important;
   border: 1.4px solid #d7d8e2 !important;
   background: var(--System-light-stroke, #ecedf1) !important;
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -568,7 +568,7 @@ body {
   padding: 16px !important;
   border: 1.4px solid #d7d8e2 !important;
   background: var(--System-light-stroke, #ecedf1) !important;
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -579,7 +579,7 @@ body {
 }
 
 .site3dConfiguratorOrderWindow__fieldValue::placeholder {
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;
@@ -600,7 +600,7 @@ body {
   background: var(--Primary-, #161c4e) !important;
   color: var(--text-White, #ffffff) !important;
 
-  font-family: "LTSuperior", sans-serif !important;
+  font-family: "LT_Superior", sans-serif !important;
   font-weight: 400 !important;
   font-size: 20px !important;
   line-height: 110.00000000000001% !important;

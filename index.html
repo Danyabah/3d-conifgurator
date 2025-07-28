@@ -10,13 +10,897 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @font-face {
+        font-family: "LT_Superior";
+        src: url("/fonts/LT_Superior-Regular.woff2") format("woff2"),
+          url("/fonts/LT_Superior-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "LT_Superior";
+        src: url("/fonts/LT_Superior-Medium.woff2") format("woff2"),
+          url("/fonts/LT_Superior-Medium.woff") format("woff");
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "LT_Superior";
+        src: url("/fonts/LT_Superior-Semibold.woff2") format("woff2"),
+          url("/fonts/LT_Superior-Semibold.woff") format("woff");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "LT_Superior";
+        src: url("/fonts/LT_Superior-Bold.woff2") format("woff2"),
+          url("/fonts/LT_Superior-Bold.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "LT_Superior", sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        padding: 80px 100px;
+        height: 100vh;
+        background: var(--System-Blue-Pressed, #0c102f);
+      }
+
+      .container__title {
+        font-family: "LT_Superior", sans-serif;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 85%;
+        letter-spacing: -4%;
+        text-align: center;
+        vertical-align: bottom;
+        color: #ffffff;
+      }
+
+      .site3dConfiguratorPanel_width_wide {
+        width: 498px !important;
+      }
+
+      .site3dConfiguratorPanelCaption {
+        font-family: "LT_Superior" !important;
+        font-weight: 600 !important;
+        font-size: 28px !important;
+        leading-trim: Cap height !important;
+        line-height: 100% !important;
+        letter-spacing: -2% !important;
+        vertical-align: bottom !important;
+        padding: 0px !important;
+      }
+
+      .site3dWidget
+        #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_hide {
+        margin-right: -500px !important;
+      }
+
+      .site3dConfiguratorSettingsGroupsButton {
+        justify-content: flex-start !important;
+        padding: 20px 16px 17px 16px !important;
+
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -1% !important;
+        vertical-align: bottom !important;
+        transition: all 0.3s ease 0s;
+
+        border: 1px solid var(--System-light-stroke, #ecedf1);
+        position: relative !important;
+      }
+
+      .site3dConfiguratorSettingsGroup {
+        gap: 0px !important;
+      }
+      .site3dConfiguratorSettingsGroupsButton:active {
+        background: #0c102f !important;
+        border: 1px solid #393f7d !important;
+        color: #ffffff !important ;
+      }
+
+      .site3dConfiguratorSettingsGroupsButton::before {
+        content: "";
+        background-image: url(./arrow.svg);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 18px;
+        top: 21px;
+        transition: all 0.3s ease 0s;
+      }
+
+      .site3dWidget
+        #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_show {
+        padding: 20px !important;
+        border-top-left-radius: 15px !important;
+        border-bottom-left-radius: 15px !important;
+      }
+
+      .site3dConfiguratorSettingsTile__item {
+        height: 200px !important;
+        width: calc(100% / 2 - 4px) !important;
+        border-color: #9db1cd !important;
+        padding: 10px !important;
+        gap: 10px !important;
+        border: 1.6px solid var(--System-light-stroke, #ecedf1) !important;
+        transition: all 0.3s ease 0s;
+      }
+
+      .site3dConfiguratorSettingsTile__item:hover {
+        background: var(--System-White-Hover, #e3e8f4) !important;
+        border: 1.6px solid var(--Secondary-3, #cfd8ec) !important;
+      }
+
+      .site3dConfiguratorSettingsTile__item[data-selected="selected"] {
+        background: var(--Secondary-2, #393f7d) !important;
+        border: 1.6px solid var(--Primary-, #161c4e) !important;
+      }
+
+      .site3dConfiguratorSettingsTile__item[data-selected="selected"]
+        .site3dConfiguratorSettingsTile__itemCaption {
+        color: #ffffff !important;
+      }
+
+      .site3dConfiguratorSettingsTile__items {
+        justify-content: flex-start !important;
+      }
+      .site3dConfiguratorPanel_width_wide
+        .site3dConfiguratorSettingsTile__item_model
+        .site3dConfiguratorSettingsTile__itemImage {
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      .site3dConfiguratorSettingsItemLabel {
+        margin-top: 15px;
+        font-family: "LT_Superior", sans-serif !important;
+
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+        color: var(--site3d-panel-colorPrimary) !important;
+      }
+
+      .site3dConfiguratorSettingsGroupsButtonSelected:hover {
+        background-color: var(--site3d-button-bgColorActivePrimary) !important;
+        color: var(--site3d-button-colorActivePrimary) !important;
+      }
+
+      .site3dConfiguratorSettingsGroupsButtonSelected {
+        border: 1px solid #393f7d !important;
+        background: #161c4e !important;
+      }
+
+      .site3dConfiguratorSettingsGroupsButtonSelected::before {
+        transform: rotate(180deg);
+      }
+
+      .site3dConfiguratorSettingsItemPrice {
+        display: none !important;
+      }
+
+      .site3dConfiguratorSettingsItem {
+        padding: 5px 0px !important;
+        box-shadow: none !important;
+      }
+
+      .site3dConfiguratorSettingsItemLabel {
+        display: none !important;
+      }
+      .site3dConfiguratorSettingsSelect .vscomp-value {
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        max-width: 100% !important;
+
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+      }
+
+      .site3dConfiguratorSettingsSelect {
+        border: 2px solid var(--System-light-stroke, #ecedf1) !important;
+        transition: all 0.3s ease 0s;
+      }
+
+      .site3dConfiguratorSettingsSelect .vscomp-toggle-button {
+        padding: 20px 20px 17px 16px !important;
+        background: var(--text-White, #ffffff);
+        box-shadow: none !important;
+      }
+
+      .site3dConfiguratorSettingsSelect.pop-comp-active {
+        border: 2px solid var(--Secondary-, #8990d9) !important;
+      }
+
+      .site3dConfiguratorSettingsSelect {
+        height: 100% !important;
+        border-radius: none !important;
+        overflow: hidden !important;
+      }
+
+      .site3dConfiguratorPrice {
+        padding: 20px 40px !important;
+      }
+
+      .site3dConfiguratorPrice__content {
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 32px !important;
+        leading-trim: Cap height;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+      }
+
+      .site3dConfiguratorPanelControlsButton {
+        width: 40px !important;
+        height: 40px !important;
+      }
+
+      .site3dConfiguratorPanelColor {
+        width: 271px !important;
+      }
+
+      .site3dConfiguratorSettingsTile__itemCaption {
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        leading-trim: Cap height;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+        overflow: visible !important;
+      }
+
+      .site3dConfiguratorPanel {
+        gap: 0px !important;
+      }
+
+      .site3dConfiguratorPanelTop {
+        margin-bottom: 24px !important;
+      }
+
+      .site3dConfiguratorSettingsWithoutGroupContent
+        .site3dConfiguratorSettingsItemContent {
+        flex-direction: row !important;
+        align-items: center !important;
+        background: #161c4e !important;
+        justify-content: space-between !important;
+        padding: 0px 20px !important;
+        border-radius: 8px;
+        height: 54px !important;
+      }
+
+      .site3dConfiguratorSettingsMaterial__textureRect {
+        display: none !important;
+      }
+
+      .site3dConfiguratorSettingsContent {
+        gap: 0px !important;
+      }
+
+      .site3dConfiguratorSettingsWithoutGroupContent
+        .site3dConfiguratorSettingsItemCaption {
+        display: none !important;
+      }
+
+      .site3dConfiguratorSettingsItemCaptionContent {
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        leading-trim: Cap height;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+        color: white !important;
+      }
+
+      .site3dConfiguratorSettingsMaterial__textureButton_upload {
+        background-image: url(./Download.svg) !important;
+      }
+
+      .site3dConfiguratorSettingsMaterial__items {
+        display: none !important;
+      }
+
+      .site3dConfiguratorSettingsMaterial__textureButton::before {
+        content: "Примерить свой дизайн";
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        leading-trim: Cap height;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+        color: white !important;
+        display: block;
+        width: 400px !important;
+        position: relative;
+        top: 2px;
+      }
+
+      .site3dConfiguratorSettingsMaterial__textureRemove {
+        display: none !important;
+      }
+
+      .site3dConfiguratorPanelPrice {
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 32px !important;
+        leading-trim: Cap height;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+        display: grid;
+        grid-template-columns: 2.5fr 0.5fr 1fr;
+        padding-top: 10px !important;
+        grid-template-areas: "column1 column2 column3";
+        white-space: nowrap;
+      }
+
+      .site3dConfiguratorPanelPrice::before {
+        content: "Цена за 1 шт.";
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 32px !important;
+        leading-trim: Cap height;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+      }
+
+      .site3dConfiguratorPanelPrice::after {
+        content: "от";
+        grid-area: column2;
+        justify-self: flex-end;
+        margin-right: 10px;
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 32px !important;
+        leading-trim: Cap height;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+      }
+
+      .site3dConfiguratorContent {
+        box-shadow: none !important;
+        /* ex */
+      }
+      .site3dWidget__canvas {
+      }
+
+      .site3dConfiguratorPanelCloseButton {
+        background: none !important;
+        width: 24px !important;
+        height: 24px !important;
+        margin: 0px !important;
+      }
+
+      #site3d-configurator-0 .site3dConfiguratorPanelCloseButton_content {
+        mask-image: url(./close.svg) !important;
+        background-color: #9d9fb3 !important;
+        transition: all 0.3s ease 0s;
+      }
+
+      #site3d-configurator-0 .site3dConfiguratorPanelCloseButton_content:hover {
+        background-color: #161c4e !important;
+      }
+
+      .vscomp-dropbox-container {
+        display: inline-flex !important;
+        opacity: 1 !important;
+        max-width: 100% !important;
+        transform: none !important;
+      }
+
+      .vscomp-toggle-button {
+        display: none !important;
+      }
+
+      .pop-comp-wrapper {
+        position: relative !important;
+        box-shadow: none !important;
+      }
+
+      .site3dConfiguratorSettingsSelect__labelCaption {
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -1% !important ;
+        vertical-align: bottom !important;
+        color: #161c4e !important;
+      }
+
+      .vscomp-option {
+        transition: all 0.3s ease 0s;
+      }
+
+      .vscomp-option.selected {
+        background: var(--Secondary-2, #393f7d) !important;
+      }
+
+      .vscomp-option.selected .site3dConfiguratorSettingsSelect__labelCaption {
+        color: #ffffff !important;
+      }
+
+      .site3dWidget__navButtonContent {
+        /* transition: all 0.3s ease 0s; */
+      }
+
+      .site3dWidget__navButton_share:hover .site3dWidget__navButtonContent {
+        background-color: var(--Blue-Hover, #30387f) !important;
+      }
+
+      .site3dWidget__navButton_share:hover
+        .site3dWidget__navButtonContent::before {
+        background-color: var(--Blue-Hover, #30387f);
+      }
+
+      .site3dConfiguratorPanelContent {
+        scrollbar-gutter: stable;
+      }
+
+      .site3dConfiguratorLoadScreen {
+        display: none !important;
+      }
+
+      .site3dWidget__preload {
+        display: none !important;
+      }
+
+      .site3dWidget__preload_show {
+        display: none !important;
+      }
+
+      .site3dWidget__load_show {
+        display: none !important;
+      }
+
+      .site3dConfiguratorLoadScreen_init {
+      }
+
+      .site3dConfiguratorLoadScreen_main {
+      }
+
+      .site3dConfiguratorLoadScreen_show {
+      }
+
+      .site3dConfiguratorLoadScreen__content {
+      }
+
+      .site3dConfiguratorLoadScreen__image {
+      }
+
+      .site3dConfiguratorLoadScreen__imageContent {
+      }
+
+      .site3dConfiguratorLoadScreen__status {
+      }
+
+      .site3dConfiguratorLoadScreen__status_show {
+      }
+
+      .site3dConfiguratorLoadScreen__statusContent {
+      }
+
+      .site3dConfiguratorLoadScreen__statusContent p {
+      }
+
+      .site3dConfiguratorOrderButton {
+        border-radius: 8px !important;
+        padding: 16px 24px !important;
+        background: var(--Primary-, #161c4e) !important;
+        color: var(--text-White, #ffffff) !important;
+
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -1% !important;
+        height: 40px !important;
+        transition: all 0.3s ease 0s;
+      }
+
+      .site3dConfiguratorOrderButton:hover {
+        background: var(--Blue-Hover, #30387f) !important;
+      }
+
+      .site3dWindow__container {
+        width: 647px !important;
+        max-width: 100% !important;
+        border-radius: 40px;
+        padding: 50px !important;
+        background: var(--Secondary-BG, #f7f7f7) !important;
+      }
+
+      .site3dWindow__caption {
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 70px !important;
+        line-height: 85% !important;
+        letter-spacing: -0.04em !important;
+        vertical-align: bottom;
+        padding: 0px !important;
+        text-align: left !important;
+        margin-bottom: 40px !important;
+      }
+
+      .site3dWindow__content {
+        padding: 0px !important;
+      }
+
+      .site3dConfiguratorOrderWindow__field {
+        padding: 0px !important;
+        margin-bottom: 6px;
+      }
+      .site3dConfiguratorOrderWindow__fieldValue {
+        padding: 16px !important;
+        border: 1.4px solid #d7d8e2 !important;
+        background: var(--System-light-stroke, #ecedf1) !important;
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -1% !important;
+        vertical-align: bottom;
+        border-radius: 8px !important;
+        color: var(--Primary-, #161c4e) !important;
+      }
+
+      .site3dConfiguratorSettingsColor__input {
+        padding: 16px !important;
+        border: 1.4px solid #d7d8e2 !important;
+        background: var(--System-light-stroke, #ecedf1) !important;
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -1% !important;
+        vertical-align: bottom;
+        border-radius: 8px !important;
+        color: var(--Primary-, #161c4e) !important;
+      }
+
+      .site3dConfiguratorOrderWindow__fieldValue::placeholder {
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -1% !important;
+        color: var(--Primary-, #161c4e) !important;
+      }
+
+      .site3dWindow__buttons {
+        padding: 16px 0px 0px 0px !important;
+      }
+      .site3dWindow__buttons_show {
+        justify-content: initial !important;
+      }
+
+      .site3dWindow__button {
+        border-radius: 8px !important;
+        padding: 16px 24px !important;
+        background: var(--Primary-, #161c4e) !important;
+        color: var(--text-White, #ffffff) !important;
+
+        font-family: "LT_Superior", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 110.00000000000001% !important;
+        letter-spacing: -1% !important;
+        transition: all 0.3s ease 0s;
+        width: 100% !important;
+      }
+
+      .site3dWindow__button:hover {
+        background: var(--Blue-Hover, #30387f) !important;
+      }
+      .site3dWindow__closeContent {
+        mask-image: url(./close.svg) !important;
+        background-color: #9d9fb3 !important;
+        transition: all 0.3s ease 0s;
+      }
+
+      .site3dWindow__closeContent:hover {
+        background-color: #161c4e !important;
+      }
+
+      .site3dWindow__close {
+        top: 30px !important;
+        right: 30px !important;
+      }
+
+      .site3dWindow__close:hover {
+        background-color: #f7f7f7 !important;
+      }
+
+      .site3dConfiguratorOrderWindow__fieldValue:focus-visible {
+        outline: none !important;
+      }
+      .site3dConfiguratorSettingsColor__input:focus-visible {
+        outline: none !important;
+      }
+
+      /* experiment */
+      .site3dConfiguratorContent {
+        position: static !important;
+      }
+
+      .site3dWidget__canvas {
+        flex-direction: row-reverse !important;
+      }
+
+      .site3dConfiguratorHeader {
+        left: 0 !important;
+      }
+
+      body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+      }
+      /* experiment */
+
+      @media (max-width: 1150px) {
+        .site3dConfiguratorPanel_width_wide {
+          width: 350px !important;
+        }
+        .site3dConfiguratorPanelCaption {
+          font-size: 22px !important;
+        }
+        .site3dWidget
+          #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_show {
+          padding: 15px !important;
+        }
+
+        .site3dConfiguratorSettingsGroupsButton {
+          padding: 15px 11px 12px 11px !important;
+          font-size: 18px !important;
+        }
+
+        .site3dConfiguratorSettingsGroupsButton::before {
+          top: 16px !important;
+        }
+
+        .site3dConfiguratorSettingsTile__itemCaption {
+          font-size: 18px !important;
+        }
+
+        .site3dConfiguratorSettingsTile__item {
+          height: 160px !important;
+        }
+
+        .site3dConfiguratorSettingsSelect__labelCaption {
+          font-size: 18px !important;
+        }
+
+        .site3dConfiguratorSettingsColor__input {
+          padding: 10px !important;
+        }
+
+        .vscomp-option {
+          padding: 0px 6px !important;
+        }
+
+        .site3dConfiguratorSettingsMaterial__textureButton::before {
+          width: 272px !important;
+          font-size: 18px !important;
+          top: 4px !important;
+        }
+
+        .site3dConfiguratorSettingsWithoutGroupContent
+          .site3dConfiguratorSettingsItemContent {
+          height: 48px !important;
+        }
+
+        .site3dConfiguratorPanelPrice::before {
+          font-size: 26px !important;
+        }
+        .site3dConfiguratorPanelPrice::after {
+          font-size: 26px !important;
+        }
+
+        .site3dConfiguratorPanelPrice {
+          font-size: 26px !important;
+        }
+
+        .site3dWindow__container {
+          width: 450px !important;
+          padding: 20px !important;
+        }
+
+        .site3dWindow__caption {
+          font-size: 49px !important;
+        }
+
+        .site3dWindow__close {
+          top: 20px !important;
+          right: 20px !important;
+        }
+      }
+
+      @media (max-width: 850px) {
+        .container {
+          padding: 40px 50px;
+        }
+
+        .container__title {
+          font-size: 40px;
+        }
+      }
+
+      @media (max-width: 750px) {
+        .site3dConfiguratorContent {
+          position: absolute !important;
+        }
+
+        .site3dWidget__canvas {
+          flex-direction: row !important;
+        }
+
+        .site3dConfiguratorHeader {
+          left: initial !important;
+        }
+
+        body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
+          border-top-right-radius: 10px !important;
+          border-bottom-right-radius: 10px !important;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .container {
+          padding: 20px;
+        }
+
+        .site3dConfiguratorPanel_width_wide {
+          width: 300px !important;
+        }
+
+        .site3dConfiguratorPanelCaption {
+          font-size: 20px !important;
+        }
+
+        .site3dWidget
+          #site3dConfiguratorPanelControlsItem.site3dConfiguratorPanel_show {
+          padding: 10px !important;
+        }
+
+        .site3dConfiguratorSettingsGroupsButton {
+          padding: 10px 6px 7px 6px !important;
+          font-size: 15px !important;
+        }
+
+        .site3dConfiguratorSettingsGroupsButton::before {
+          top: 7px !important;
+        }
+
+        .site3dConfiguratorSettingsTile__itemCaption {
+          font-size: 14px !important;
+          padding: 0px !important;
+        }
+
+        .site3dConfiguratorSettingsTile__item {
+          height: 140px !important;
+        }
+
+        .site3dConfiguratorSettingsSelect__labelCaption {
+          font-size: 15px !important;
+        }
+
+        .site3dConfiguratorSettingsColor__input {
+          padding: 5px 10px !important;
+          font-size: 15px !important;
+        }
+
+        .site3dConfiguratorSettingsMaterial__textureButton::before {
+          width: 220px !important;
+          font-size: 15px !important;
+          top: 3px !important;
+        }
+
+        .site3dConfiguratorSettingsMaterial__textureButton {
+          width: 20px !important;
+          height: 20px !important;
+        }
+
+        .site3dConfiguratorSettingsWithoutGroupContent
+          .site3dConfiguratorSettingsItemContent {
+          height: 36px !important;
+        }
+
+        .site3dConfiguratorPanelPrice::before {
+          font-size: 21px !important;
+        }
+
+        .site3dConfiguratorPanelPrice::after {
+          font-size: 21px !important;
+          margin-right: 5px;
+        }
+
+        .site3dConfiguratorPanelPrice {
+          font-size: 21px !important;
+        }
+
+        .site3dWindow__container {
+          width: 320px !important;
+          padding: 20px !important;
+        }
+
+        .site3dWindow__caption {
+          font-size: 29px !important;
+        }
+
+        .site3dWindow__close {
+          top: 10px !important;
+          right: 10px !important;
+        }
+      }
+
+      .vscomp-wrapper.show-as-popup .vscomp-dropbox {
+        margin-top: 0px !important;
+        max-height: 100% !important;
+        max-width: 100% !important;
+        position: static !important;
+        width: 100% !important;
+      }
+
+      .vscomp-wrapper.show-as-popup .vscomp-dropbox-container {
+        position: static !important;
+        height: 100% !important;
+
+        background-color: none !important;
+        display: block !important;
+        height: 100% !important;
+        justify-content: center;
+        left: 0;
+        opacity: 1;
+        overflow: auto;
+        padding: 0px !important;
+        position: static !important;
+        top: 0;
+        width: 100% !important;
+      }
+      .site3dConfiguratorSettingsSelect__labelPrice {
+        display: none !important;
+      }
+    </style>
+
     <script
       id="site3d-configurator-load"
       src="https://site3d.site/configurator/load.js?v=2.0"
       data-lang="ru"
     ></script>
-    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="container">

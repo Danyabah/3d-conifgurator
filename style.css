@@ -137,6 +137,11 @@ body {
   gap: 10px !important;
   border: 1.6px solid var(--System-light-stroke, #ecedf1) !important;
   transition: all 0.3s ease 0s;
+  max-width: 100% !important;
+}
+
+.site3dConfiguratorSettingsTile__item_model {
+  max-width: 100% !important;
 }
 
 .site3dConfiguratorSettingsTile__item:hover {
@@ -892,6 +897,68 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
     top: 10px !important;
     right: 10px !important;
   }
+
+  .site3dConfiguratorPanelControlsButton__content {
+    mask-image: none !important;
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    border-radius: 8px;
+
+    color: var(--text-White, #ffffff) !important;
+    font-family: "LT_Superior", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 110.00000000000001% !important;
+    letter-spacing: -1% !important;
+    height: 40px !important;
+  }
+  .site3dConfiguratorPanelControlsButton {
+    width: auto !important;
+  }
+  .site3dConfiguratorPanelControlsButton__content::after {
+    content: "Задать параметры";
+  }
+
+  .site3dConfiguratorPanelControlsButton:hover
+    .site3dConfiguratorPanelControlsButton__content {
+    background: var(--Blue-Hover, #30387f) !important;
+  }
+
+  .site3dConfiguratorHeader {
+    flex-wrap: nowrap !important;
+    align-items: baseline !important;
+  }
+}
+
+.site3dWidget__navButton {
+  position: absolute !important;
+  left: 4px !important;
+  bottom: 10px !important;
+}
+
+@media (max-width: 400px) {
+  .site3dConfiguratorPanelControlsButton__content {
+    padding: 0px 12px;
+
+    color: var(--text-White, #ffffff) !important;
+    font-family: "LT_Superior", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 110.00000000000001% !important;
+    letter-spacing: -1% !important;
+    height: 30px !important;
+  }
+
+  .site3dConfiguratorPanelControlsButton {
+    height: 30px !important;
+  }
+
+  .site3dConfiguratorOrderButton {
+    font-size: 14px !important;
+    padding: 10px 12px !important;
+    height: 30px !important;
+  }
 }
 
 .vscomp-wrapper.show-as-popup .vscomp-dropbox {
@@ -919,5 +986,9 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
   width: 100% !important;
 }
 .site3dConfiguratorSettingsSelect__labelPrice {
+  display: none !important;
+}
+
+.site3dConfiguratorSettingsSelect__labelIcon {
   display: none !important;
 }

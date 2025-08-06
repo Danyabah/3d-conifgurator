@@ -161,6 +161,11 @@
   height: 100% !important;
 }
 
+.site3dConfiguratorSettingsTile__itemImage {
+  background-size: contain !important;
+  background-color: #f7f7f7;
+}
+
 .site3dConfiguratorSettingsItemLabel {
   margin-top: 15px;
   font-family: "LT_Superior", sans-serif !important;
@@ -748,6 +753,10 @@ body:has(.site3dConfiguratorPanel_show) .site3dWidget__canvasContent {
   .site3dWindow__close {
     top: 20px !important;
     right: 20px !important;
+  }
+
+  .site3dConfiguratorSettingsTile__itemCaption {
+    white-space: wrap !important;
   }
 }
 
